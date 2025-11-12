@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="assets/logos/logo-icon-fotor.png" type="image/png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@600;700;800&family=Montserrat:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Yatiyana Group - Premium Rice & Grocery Distributors</title>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <!-- ===== NEW: GSAP for Advanced Animations ===== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="content">
+          <div class="logo">
+            <a href="#hero">
+              <img
+                src="assets/logo.png"
+                alt="Yatiyana Group Logo"
+                class="logo-img"
+              />
+            </a>
+          </div>
+
+          <nav class="desktop-nav">
+            <a href="#hero">Home</a>
+            <a href="#about">About</a>
+            <a href="#why-us">Why Us</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#products">Products</a>
+            <a href="#process">Process</a>
+            <a href="#leadership">Team</a>
+            <a href="#location">Location</a> <a href="#contact">Contact</a>
+          </nav>
+
+          <div class="hamburger-menu">
+            <box-icon name="menu" size="md"></box-icon>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="mobile-nav">
+      <div class="mobile-nav-close">
+        <box-icon name="x" size="md"></box-icon>
+      </div>
+      <a href="#hero" class="mobile-link">Home</a>
+      <a href="#about" class="mobile-link">About Us</a>
+      <a href="#why-us" class="mobile-link">Why Us</a>
+      <a href="#products" class="mobile-link">Products</a>
+      <a href="#gallery" class="mobile-link">Gallery</a>
+      <a href="#customers" class="mobile-link">Partners</a>
+      <a href="#leadership" class="mobile-link">Team</a>
+      <a href="#location" class="mobile-link">Location</a>
+      <a href="#contact" class="mobile-link">Contact Us</a>
+    </div>
+
+    <a href="#hero" class="to-top" title="Back to top" aria-label="Back to top"
+      ><box-icon name="chevron-up" aria-hidden="true"></box-icon
+    ></a>
+
+    <a
+      href="https://wa.me/94771234567"
+      target="_blank"
+      rel="noopener"
+      class="whatsapp-icon"
+      title="Chat with us on WhatsApp"
+    >
+      <box-icon type="logo" name="whatsapp"></box-icon>
+    </a>
+
+    <section class="hero" id="hero">
+      <div class="hero-slider">
+        <div
+          class="hero-slide active"
+          style="background-image: url('assets/bg3')"
+        ></div>
+        <div
+          class="hero-slide"
+          style="background-image: url('assets/bg4')"
+        ></div>
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="container">
+        <div class="content">
+          <h1 class="title">YATIYANA GROUP</h1>
+          <p class="subtitle">
+            Trusted Premium Rice & Grocery Distributors in Embilipitiya
+          </p>
+          <a href="#contact" class="btn-primary"> Place Your Order </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container">
+        <div class="left-side">
+          <img src="assets/bg2" alt="Yatiyana Group Warehouse" />
+        </div>
+        <div class="right-side">
+          <h2 class="section-title-sub">About Our Company</h2>
+          <h1 class="section-title">Decades of Trusted Quality</h1>
+          <p>
+            For over two decades, Yatiyana Group has been the cornerstone of
+            quality and reliability in Embilipitiya. We specialize in
+            distributing premium-grade rice and essential groceries, sourced
+            directly from trusted farmers and producers. Our commitment is to
+            ensure every household and business receives only the best products,
+            backed by exceptional service.
+          </p>
+          <div class="stats">
+            <div class="stat-item">
+              <h3 class="counter" data-target="20">0+</h3>
+              <p>Years of Experience</p>
+            </div>
+            <div class="stat-item">
+              <h3 class="counter" data-target="100">0+</h3>
+              <p>Happy Clients</p>
+            </div>
+            <div class="stat-item">
+              <h3 class="counter" data-target="5000">0+</h3>
+              <p>Tons Delivered</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="company-overview glow-section" id="company">
+      <div class="radial-glow-circle"></div>
+      <div class="container">
+        <h2 class="section-title-center">Our Company</h2>
+        <p class="section-desc">
+          Yatiyana Group is one of Sri Lanka’s leading rice and grocery
+          distributors, supplying premium-quality food products to wholesalers,
+          hotels, and retailers islandwide. With decades of trust and
+          excellence, we deliver consistency, reliability, and innovation.
+        </p>
+        <div class="overview-grid">
+          <div class="overview-card">
+            <box-icon type="solid" name="factory"></box-icon>
+            <h3>Modern Milling Plants</h3>
+            <p>
+              Equipped with state-of-the-art rice milling and packaging
+              technology.
+            </p>
+          </div>
+          <div class="overview-card">
+            <box-icon name="map"></box-icon>
+            <h3>Islandwide Distribution</h3>
+            <p>
+              We reach every corner of Sri Lanka with our strong logistics
+              network.
+            </p>
+          </div>
+          <div class="overview-card">
+            <box-icon name="award"></box-icon>
+            <h3>Certified Quality</h3>
+            <p>
+              All our rice varieties meet national food safety and quality
+              standards.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="why-us" id="why-us">
+      <div class="container">
+        <h2 class="section-title-center">Why Choose Us?</h2>
+        <p class="section-desc">
+          We are committed to providing unparalleled quality and service.
+        </p>
+        <div class="why-us-grid">
+          <div class="why-us-card">
+            <div class="icon-wrapper">
+              <box-icon name="badge-check"></box-icon>
+            </div>
+            <h3>Premium Quality</h3>
+            <p>
+              We source only the best products, ensuring strict quality control
+              at every stage.
+            </p>
+          </div>
+          <div class="why-us-card">
+            <div class="icon-wrapper">
+              <box-icon type="solid" name="truck"></box-icon>
+            </div>
+            <h3>Reliable Delivery</h3>
+            <p>
+              Our robust distribution network ensures timely delivery across the
+              island.
+            </p>
+          </div>
+          <div class="why-us-card">
+            <div class="icon-wrapper">
+              <box-icon name="dollar-circle"></box-icon>
+            </div>
+            <h3>Competitive Pricing</h3>
+            <p>
+              By working directly with producers, we offer the best prices for
+              our clients.
+            </p>
+          </div>
+          <div class="why-us-card">
+            <div class="icon-wrapper">
+              <box-icon name="support"></box-icon>
+            </div>
+            <h3>Excellent Service</h3>
+            <p>
+              Our dedicated team is always ready to support your business needs.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="products glow-section" id="products">
+      <div class="radial-glow-circle-alt"></div>
+      <div class="container">
+        <h2 class="section-title-center">Our Products</h2>
+        <p class="section-desc">
+          We provide a wide range of essential goods beyond premium rice.
+        </p>
+        <div class="product-categories">
+          <div class="product-category-card">
+            <div class="product-icon">
+              <box-icon name="bowl-rice"></box-icon>
+            </div>
+            <h3>Rice Varieties</h3>
+            <ul>
+              <li>Nadu Rice (නාඩු)</li>
+              <li>Samba Rice (සම්බා)</li>
+              <li>Yatiyana Rose Raw Rice</li>
+              <li>Red Raw Rice (රතු කැකුළු)</li>
+            </ul>
+          </div>
+
+          <div class="product-category-card">
+            <div class="product-icon">
+              <box-icon type="solid" name="package"></box-icon>
+            </div>
+            <h3>Essential Goods</h3>
+            <ul>
+              <li>White Sugar (සුදු සීනි)</li>
+              <li>Lanka Brown Sugar (දුඹුරු සීනි)</li>
+              <li>Prima Wheat Flour (ප්‍රීමා පිටි)</li>
+              <li>Table Salt (ලුණු)</li>
+            </ul>
+          </div>
+
+          <div class="product-category-card">
+            <div class="product-icon">
+              <box-icon name="basket"></box-icon>
+            </div>
+            <h3>Groceries</h3>
+            <ul>
+              <li>Dhall (පරිප්පු)</li>
+              <li>Spices (තුනපහ)</li>
+              <li>Onion / Potato (ලූනු / අර්තාපල්)</li>
+              <li>Tin Fish (ටින් මාළු)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+      <div class="container">
+        <h2 class="section-title-center">Our Facilities & Operations</h2>
+        <p class="section-desc">
+          Explore our processing plants, distribution fleet, and dedicated
+          workforce.
+        </p>
+        <div class="gallery-grid">
+          <a href="assets/gallery/n1.png" class="gallery-item">
+            <img src="assets/gallery/n1.png" alt="Warehouse" loading="lazy" />
+          </a>
+          <a href="assets/gallery/n2.png" class="gallery-item">
+            <img
+              src="assets/gallery/n2.png"
+              alt="Milling Machines"
+              loading="lazy"
+            />
+          </a>
+          <a href="assets/gallery/n3.png" class="gallery-item">
+            <img src="assets/gallery/n3.png" alt="Packaging" loading="lazy" />
+          </a>
+          <a href="assets/gallery/n4.png" class="gallery-item">
+            <img
+              src="assets/gallery/n4.png"
+              alt="Delivery Fleet"
+              loading="lazy"
+            />
+          </a>
+          <a href="assets/gallery/n5.png" class="gallery-item">
+            <img src="assets/gallery/n5.png" alt="Team" loading="lazy" />
+          </a>
+          <a href="assets/gallery/n6" class="gallery-item">
+            <img
+              src="assets/gallery/n6"
+              alt="Distribution Center"
+              loading="lazy"
+            />
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- ===== NEW: Lightbox Modal for Gallery ===== -->
+    <div class="lightbox" id="lightbox">
+      <div class="lightbox-content">
+        <span class="lightbox-close">&times;</span>
+        <img src="" class="lightbox-image" alt="Enlarged gallery image" />
+      </div>
+    </div>
+
+    <section class="process" id="process">
+      <div class="container">
+        <h2 class="section-title-center">Our Distribution Process</h2>
+        <div class="process-grid">
+          <div class="process-step">
+            <div class="process-icon">01</div>
+            <h3>Sourcing</h3>
+            <p>
+              We carefully select and source the best paddy and goods directly
+              from local farmer networks.
+            </p>
+          </div>
+          <div class="process-step">
+            <div class="process-icon">02</div>
+            <h3>Milling & Processing</h3>
+            <p>
+              Using modern technology, we mill and process paddy while
+              preserving its nutrients.
+            </p>
+          </div>
+          <div class="process-step">
+            <div class="process-icon">03</div>
+            <h3>Packaging</h3>
+            <p>
+              Our products are securely packed in high-quality bags to ensure
+              freshness and safety.
+            </p>
+          </div>
+          <div class="process-step">
+            <div class="process-icon">04</div>
+            <h3>Distribution</h3>
+            <p>
+              Our fleet is ready to deliver your orders promptly to any location
+              islandwide.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="leadership" id="leadership">
+      <div class="container">
+        <h2 class="section-title-center">Visionary Leadership</h2>
+        <p class="section-desc">
+          Meet the visionary leader guiding Yatiyana Group's commitment to
+          quality and excellence.
+        </p>
+        <div class="leader-card-wrapper">
+          <div class="leader-card creative-design">
+            <div class="leader-photo">
+              <img
+                src="assets/bg4"
+                alt="Mr. Samantha Kumara, Founder & Managing Director"
+                class="owner-photo"
+              />
+            </div>
+            <div class="leader-details">
+              <h3 class="leader-name">Mr. Samantha Kumara</h3>
+              <p class="leader-title">Founder & Managing Director</p>
+              <hr />
+              <blockquote class="leader-quote">
+                "Our journey began with a promise: to deliver the purest quality
+                from the heart of Sri Lanka to every plate. This commitment
+                remains the driving force of the Yatiyana Group."
+              </blockquote>
+              <div class="leader-contact">
+                <a href="tel:+94771234567" title="Call Director">
+                  <box-icon type="solid" name="phone-call"></box-icon>
+                </a>
+                <a
+                  href="mailto:samantha@yatiyanagroup.com"
+                  title="Email Director"
+                >
+                  <box-icon name="envelope"></box-icon>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="customers" id="customers">
+      <h2 class="section-title-center">Trusted By</h2>
+      <div class="logo-slider">
+        <div class="logo-track">
+          <div class="logo-slide">
+            <img src="assets/logos/customer-logo-1" alt="Customer 1" />
+          </div>
+          <div class="logo-slide">
+            <img src="assets/logos/customer-logo-2" alt="Customer 2" />
+          </div>
+          <div class="logo-slide">
+            <img src="assets/logos/customer-logo-3" alt="Customer 3" />
+          </div>
+          <div class="logo-slide">
+            <img src="assets/logos/customer-logo-4" alt="Customer 4" />
+          </div>
+          <div class="logo-slide">
+            <img src="assets/logos/customer-logo-5" alt="Customer 5" />
+          </div>
+          <div class="logo-slide">
+            <img src="assets/logos/customer-logo-1" alt="Customer 1" />
+          </div>
+          <div class="logo-slide">
+            <img src="assets/logos/customer-logo-2" alt="Customer 2" />
+          </div>
+          <div class="logo-slide">
+            <img src="assets/logos/customer-logo-3" alt="Customer 3" />
+          </div>
+          <div class="logo-slide">
+            <img src="assets/logos/customer-logo-4" alt="Customer 4" />
+          </div>
+          <div class="logo-slide">
+            <img src="assets/logos/customer-logo-5" alt="Customer 5" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== NEW: Map Section ===== -->
+    <section class="map-section" id="location">
+      <div class="container">
+        <h2 class="section-title-center">Our Location</h2>
+        <p class="section-desc">
+          Visit us at our main distribution center in Embilipitiya.
+        </p>
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.913535941551!2d80.84858307475102!3d6.405058993583537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae40531252b3f9b%3A0x8c1e0373a45c3a3a!2sYatiyana%20Group!5e0!3m2!1sen!2slk!4v1716280020840!5m2!1sen!2slk"
+            width="100%"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+    <!-- ===== END OF Map Section ===== -->
+
+    <section class="contact glow-section" id="contact">
+      <div class="radial-glow-circle"></div>
+      <div class="container">
+        <h2 class="section-title-center">Get in Touch</h2>
+        <p class="section-desc">
+          Have questions or want to place an order? Send us a message!
+        </p>
+        <form id="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="from_name">Name</label>
+              <input type="text" id="from_name" name="from_name" required />
+            </div>
+            <div class="form-group">
+              <label for="from_email">Email</label>
+              <input type="email" id="from_email" name="from_email" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="from_phone">Phone Number</label>
+            <input type="tel" id="from_phone" name="from_phone" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn-primary">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="profile">
+          <div class="logo">
+            <a href="#hero"
+              ><img
+                src="assets/logos/logo-icon.png"
+                alt="Yatiyana Group Logo"
+                class="logo-img"
+            /></a>
+          </div>
+          <p>
+            Your trusted partner for premium quality rice & groceries in
+            Embilipitiya, Sri Lanka.
+          </p>
+          <div class="social-media-container">
+            <a
+              href="#"
+              class="social-media"
+              title="Instagram"
+              aria-label="Instagram"
+              ><box-icon
+                type="logo"
+                name="instagram"
+                aria-hidden="true"
+              ></box-icon
+            ></a>
+            <a
+              href="#"
+              class="social-media"
+              title="YouTube"
+              aria-label="YouTube"
+              ><box-icon
+                name="youtube"
+                type="logo"
+                aria-hidden="true"
+              ></box-icon
+            ></a>
+            <a
+              href="#"
+              class="social-media"
+              title="Facebook"
+              aria-label="Facebook"
+              ><box-icon
+                name="facebook-circle"
+                type="logo"
+                aria-hidden="true"
+              ></box-icon
+            ></a>
+          </div>
+        </div>
+        <div class="link-container">
+          <div class="navigation">
+            <h1>Quick Links</h1>
+            <ul>
+              <li><a href="#hero">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#why-us">Why Choose Us</a></li>
+              <li><a href="#products">Products</a></li>
+              <li><a href="#process">Our Process</a></li>
+            </ul>
+          </div>
+          <div class="resource">
+            <h1>Contact Info</h1>
+            <ul>
+              <li>
+                <p>
+                  <box-icon name="map" size="xs"></box-icon> Yatiyana,
+                  Embilipitiya
+                </p>
+              </li>
+              <li>
+                <p>
+                  <box-icon name="phone" size="xs"></box-icon> +94 77 123 4567
+                </p>
+              </li>
+              <li>
+                <p>
+                  <box-icon name="envelope" size="xs"></box-icon>
+                  info@yatiyanagroup.com
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          &copy; <span id="current-year"></span> Yatiyana Group. All Rights
+          Reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <script>
+      document.getElementById("current-year").textContent =
+        new Date().getFullYear();
+    </script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
